@@ -1511,3 +1511,7 @@
   margin-top: 3rem;
   height: 1rem;
 }
+
+a {
+  font-size: 0;
+}
