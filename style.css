@@ -74,13 +74,13 @@
   border-bottom: 1.5rem solid var(--white);
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 360px) and (min-width: 360px) {
   .menu-mobile-visible:before {
     left: 91.6%;
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) and (min-width: 375px) {
   .menu-mobile-visible:before {
     left: 92%;
   }
