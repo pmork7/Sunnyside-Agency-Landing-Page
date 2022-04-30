@@ -5,7 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -14,7 +23,118 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="body-desktop">
+  <main>
+    <section>
+
+      <div id="center-body" class="center-body-desktop">
+        <div id="orange-half" class="orange-half-desktop">
+            <nav id="top-nav" class="nav-style-desktop">
+              <img src="images/logo.svg" id="logo-img" class="nav-style-desktop" alt="Sunnyside logo" aria-hidden="true">
+              <div id="toggle" class="toggle-hidden"><img src="images/icon-hamburger.svg" alt="hamburger icon" aria-hidden="true"></div>
+              <div id="mobile-menu" class="menu-mobile-invisible">
+              </div>
+              <ul id="links-list" class="links-desktop">
+                <li class="link-items-desktop">Contact</li>
+                <li class="link-items-desktop">Projects</li>
+                <li class="link-items-desktop">Services</li>
+                <li class="link-items-desktop">About</li>
+              </ul>
+            </nav>
+            <img src="images/desktop/image-header.jpg" id="top-bg" alt="Picture of half an orange" class="orange-half-desktop" aria-hidden="true">
+            <h1>WE ARE CREATIVES</h1>
+            <img id="arrow-icon" class="arrow-desktop" src="images/icon-arrow-down.svg" alt="Picture of a down-facing white arrow" aria-hidden="true">
+        </div>
+        <div id="square1" class="square-desktop writing">
+          <h1 class="bg-writing-desktop">Transform your brand</h1>
+          <p class="sm-writing-desktop">We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <div class="square-link-container-desktop square-link-container">
+            <a class="square-link" href="#">LEARN MORE</a>
+            <div class="link-underline partial-opacity" id="yellow-underline"></div>
+          </div>
+        </div>
+        <div id="square2" class="square-desktop writing">
+          <img src="images/desktop/image-transform.jpg" alt="Picture of an egg" aria-hidden="true">
+        </div>
+        <div id="square3" class="square-desktop writing">
+          <img src="images/desktop/image-stand-out.jpg" alt="Picture of a red champagne flute" aria-hidden="true">
+        </div>
+        <div id="square4" class="square-desktop writing">
+          <h1 class="bg-writing-desktop">Stand out to the right audience</h1>
+          <p class="sm-writing-desktop">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+          <div class="square-link-container-desktop square-link-container">
+            <a class="square-link" href="#">LEARN MORE</a>
+            <div class="link-underline partial-opacity" id="red-underline"></div>
+          </div>
+        </div>
+        <div id="square5" class="square-desktop writing">
+          <img src="images/desktop/image-graphic-design.jpg" alt="Picture of a pair of cherries" aria-hidden="true">
+          <h1 class="bg-writing-desktop">Graphic Design</h1>
+          <p class="sm-writing-desktop">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+        <div id="square6" class="square-desktop writing">
+          <img src="images/desktop/image-photography.jpg" alt="Picture of an orange" aria-hidden="true">
+          <h1 class="bg-writing-desktop">Photography</h1>
+          <p class="sm-writing-desktop">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+        <div id="testimonial" class="testimonial-desktop">
+            <h1>CLIENT TESTIMONIALS</h1>
+            <div id="t-card-container" class="testimonial-cards-container-desktop">
+              <div class="testimonial-card-desktop">
+                <img src="images/image-emily.jpg" alt="Image of Emily" aria-hidden="true">
+                <p class="testimonial-text-desktop">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                <div class="name-container">
+                  <p class="name-text">Emily R.</p>
+                  <p class="title-text">Marketing Director</p>
+                </div>
+              </div>
+              <div class="testimonial-card-desktop" id="middle-card">
+                <img src="images/image-thomas.jpg" alt="Image of Thomas" aria-hidden="true">
+                <p class="testimonial-text-desktop">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                <div class="name-container">
+                  <p class="name-text">Thomas S.</p>
+                  <p class="title-text">Chief Operating Officer</p>
+                </div>
+              </div>
+              <div class="testimonial-card-desktop">
+                <img src="images/image-jennie.jpg" alt="Image of Jennie" aria-hidden="true">
+                <p class="testimonial-text-desktop">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                <div class="name-container">
+                  <p class="name-text">Jennie F.</p>
+                  <p class="title-text">Business Owner</p>
+                </div>
+
+          </div>
+        </div>
+      </div>
+        <div id="four-pictures" class="four-pictures-desktop">
+          <div id="pictures-container" class="pictures-container-desktop">
+            <img class="picture-card-desktop" id="picture1" src="images/desktop/image-gallery-milkbottles.jpg" alt="Pictures of milk bottles" aria-hidden="true">
+            <img class="picture-card-desktop" id="picture2" src="images/desktop/image-gallery-orange.jpg" alt="Picture of oranges in a bowl" aria-hidden="true">
+            <img class="picture-card-desktop" id="picture3" src="images/desktop/image-gallery-cone.jpg" alt="Picture of an icecream cone" aria-hidden"true">
+            <img class="picture-card-desktop" id="picture4" src="images/desktop/image-gallery-sugarcubes.jpg" alt="Picture of some sugar cubes" aria-hidden="true">
+          </div>
+        </div>
+        <div id="footer" class="footer-style-desktop">
+          <img src="images/logo.svg" alt="Sunnyside logo" aria-hidden="true">
+          <ul id="footer-nav" class="footer-nav-desktop">
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+          </ul>
+          <ul id="social-media-list" class="social-media-list-desktop">
+            <li><a href="#"><img src="images/icon-facebook.svg" alt="Facebook icon" aria-hidden="true"></a></li>
+            <li><a href="#"><img src="images/icon-instagram.svg" alt="Instagram icon" aria-hidden="true"></a></li>
+            <li><a href="#"><img src="images/icon-twitter.svg" alt="Twitter icon" aria-hidden="true"></li>
+            <li><a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest-icon" aria-hidden="true"></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<div style="display:none">
   About
   Services
   Projects
@@ -24,14 +144,14 @@
 
   Transform your brand
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
+  We are a full-service creative agency specializing in helping brands grow fast.
   Engage your clients through compelling visuals that do most of the marketing for you.
 
   Learn more
 
   Stand out to the right audience
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
 
   Learn more
 
@@ -59,10 +179,12 @@
   Services
   Projects
   Contact
+</div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+<script src="script.js"></script>
 </body>
 </html>
