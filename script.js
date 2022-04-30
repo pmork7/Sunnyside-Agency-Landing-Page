@@ -180,7 +180,106 @@ function swapImages(x) {
     socialMediaList.classList.remove("social-media-list-desktop");
     socialMediaList.classList.add("social-media-list-mobile");
   } else {
+    document.body.classList.remove("body-mobile");
+    document.body.classList.add("body-desktop");
+    topBg.src = "images/desktop/image-header.jpg";
+    topBg.classList.add("orange-half-desktop");
+    topBg.classList.remove("orange-half-mobile")
+    navBar.classList.remove("nav-style-mobile");
+    navBar.classList.add("nav-style-desktop");
+    orangeHalf.classList.remove("orange-half-mobile");
+    orangeHalf.classList.add("orange-half-desktop");
+    centerBody.classList.remove("center-body-mobile");
+    centerBody.classList.add("center-body-desktop");
+    arrowIcon.classList.remove("arrow-mobile");
+    arrowIcon.classList.add("arrow-desktop");
+    for (let i = 0; i < linkItems.length; i++) {
+      linkItems[i].classList.remove("link-items-mobile");
+      linkItems[i].classList.add("link-items-desktop");
+    }
+    linksList.classList.remove("links-mobile");
+    linksList.classList.add("links-desktop");
+    mobileMenu.removeChild(linksList);
+    navBar.appendChild(linksList);
+    toggle.classList.add("toggle-hidden");
+    toggle.classList.remove("toggle-visible");
+    toggle.addEventListener("click", function() {
+      if (mobileMenu.classList[0] === "menu-mobile-visible") {
+        mobileMenu.classList.remove("menu-mobile-visible");
+        mobileMenu.classList.add("menu-mobile-invisible");
+      } else {
+        mobileMenu.classList.remove("menu-mobile-invisible");
+        mobileMenu.classList.add("menu-mobile-visible");
+      }
+    })
+    logoImg.classList.remove("nav-style-mobile");
+    logoImg.classList.add("nav-style-desktop");
 
+    //Remove desktop class from squares, add mobile classes to squares
+    square1.classList.remove("square-mobile");
+    square1.classList.add("square-desktop");
+    square1.children[0].classList.remove("bg-writing-mobile");
+    square1.children[0].classList.add("bg-writing-desktop");
+    square1.children[1].classList.remove("sm-writing-mobile");
+    square1.children[1].classList.add("sm-writing-desktop");
+    square2.classList.remove("square-mobile");
+    square2.classList.add("square-desktop");
+    sq2img.src = "images/desktop/image-transform.jpg";
+    square3.classList.remove("square-mobile");
+    square3.classList.add("square-desktop");
+    sq3img.src = "images/desktop/image-stand-out.jpg"
+    square4.classList.remove("square-mobile");
+    square4.classList.add("square-desktop");
+    square4.children[0].classList.remove("bg-writing-mobile");
+    square4.children[0].classList.add("bg-writing-desktop");
+    square4.children[1].classList.remove("sm-writing-mobile");
+    square4.children[1].classList.add("sm-writing-desktop");
+    square5.classList.remove("square-mobile");
+    square5.classList.add("square-desktop");
+    sq5img.src = "images/desktop/image-graphic-design.jpg"
+    square5.children[1].classList.remove("bg-writing-mobile");
+    square5.children[1].classList.add("bg-writing-desktop");
+    square5.children[2].classList.remove("sm-writing-mobile");
+    square5.children[2].classList.add("sm-writing-desktop");
+    square6.classList.remove("square-mobile");
+    square6.classList.add("square-desktop");
+    sq6img.src = "images/desktop/image-photography.jpg";
+    square6.children[1].classList.remove("bg-writing-mobile");
+    square6.children[1].classList.add("bg-writing-desktop");
+    square6.children[2].classList.remove("sm-writing-mobile");
+    square6.children[2].classList.add("sm-writing-desktop");
+    testimonial.classList.remove("testimonial-mobile");
+    testimonial.classList.add("testimonial-desktop");
+    fourpictures.classList.remove("four-pictures-mobile");
+    fourpictures.classList.add("four-pictures-desktop");
+    footer.classList.remove("footer-style-mobile");
+    footer.classList.add("footer-style-desktop");
+    for (let i = 0; i < squareLinkContainers.length; i++) {
+      squareLinkContainers[i].classList.remove("square-link-container-mobile");
+      squareLinkContainers[i].classList.add("square-link-container-desktop");
+    }
+    testimonialCardContainer.classList.remove("testimonial-cards-container-mobile");
+    testimonialCardContainer.classList.add("testimonial-cards-container-desktop");
+    for (let i = 0; i < testimonialCardContainer.children.length; i++) {
+      testimonialCardContainer.children[i].classList.remove("testimonial-card-mobile");
+      testimonialCardContainer.children[i].classList.add("testimonial-card-desktop");
+      testimonialCardContainer.children[i].children[1].classList.remove("testimonial-text-mobile");
+      testimonialCardContainer.children[i].children[1].classList.add("testimonial-text-desktop");
+    }
+    picture1.src = "images/desktop/image-gallery-milkbottles.jpg";
+    picture2.src = "images/desktop/image-gallery-orange.jpg";
+    picture3.src = "images/desktop/image-gallery-cone.jpg";
+    picture4.src = "images/desktop/image-gallery-sugarcubes.jpg";
+    for (let i = 0; i < pictureCards.length; i++) {
+      pictureCards[i].classList.remove("picture-card-mobile");
+      pictureCards[i].classList.add("picture-card-desktop");
+    }
+    picturesContainer.classList.remove("pictures-container-mobile");
+    picturesContainer.classList.add("pictures-container-desktop");
+    footerNav.classList.remove("footer-nav-mobile");
+    footerNav.classList.add("footer-nav-desktop");
+    socialMediaList.classList.remove("social-media-list-mobile");
+    socialMediaList.classList.add("social-media-list-desktop");
   }
 }
 
